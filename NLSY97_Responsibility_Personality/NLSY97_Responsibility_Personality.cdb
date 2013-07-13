@@ -1,0 +1,923 @@
+R00001.00    [PUBID]                                        Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             PUBID, YOUTH CASE IDENTIFICATION CODE
+ 
+COMMENT: YOUTH CASE IDENTIFICATION CODE
+ 
+       0           0
+     998           1 TO 999
+     999        1000 TO 1999
+     997        2000 TO 2999
+     996        3000 TO 3999
+     998        4000 TO 4999
+     996        5000 TO 5999
+     994        6000 TO 6999
+     994        7000 TO 7999
+     989        8000 TO 8999
+      23        9000 TO 9999
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:           9022        Mean:              4504.3
+ 
+Hard Minimum: [0]  Hard Maximum: [99999999]
+ 
+Lead In: R72976.00[Default]
+Default Next Question: R05363.00
+--------------------------------------------------------------------------------
+R05363.00    [KEY!SEX]                                      Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!SEX, RS GENDER (SYMBOL)
+ 
+COMMENT: Gender of Youth
+ 
+    4599       1 Male
+    4385       2 Female
+       0       0 No Information
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Lead In: R00001.00[Default]
+Default Next Question: R05364.00
+--------------------------------------------------------------------------------
+R05364.01    [KEY!BDATE_M]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+     816           1: January
+     693           2: February
+     760           3: March
+     659           4: April
+     689           5: May
+     720           6: June
+     762           7: July
+     782           8: August
+     839           9: September
+     765          10: October
+     763          11: November
+     736          12: December
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             12        Mean:                6.56
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Hard Minimum: [01/01/1880]  Hard Maximum: [the current date]
+ 
+Lead In: R05363.00[Default]
+Default Next Question: R05366.00
+--------------------------------------------------------------------------------
+R05364.02    [KEY!BDATE_Y]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:           1980        Max:           1984        Mean:             1982.01
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Hard Minimum: [01/01/1880]  Hard Maximum: [the current date]
+ 
+Lead In: R05363.00[Default]
+Default Next Question: R05366.00
+--------------------------------------------------------------------------------
+R12358.00    [CV_SAMPLE_TYPE]                               Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             SAMPLE TYPE.  CROSS-SECTIONAL OR OVERSAMPLE
+ 
+Sample type: Is the respondent a member of the cross-sectional sample or the 
+oversample?
+ 
+    6748       1 Cross-sectional
+    2236       0 Oversample
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Lead In: R12357.00[Default]
+Default Next Question: R12359.00
+--------------------------------------------------------------------------------
+R14826.00    [KEY!RACE_ETHNICITY]                           Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!RACE_ETHNICITY, COMBINED RACE AND ETHNICITY (SYMBOL)
+ 
+COMMENT: Combined race - ethnicity variable
+ 
+    2335       1 Black
+    1901       2 Hispanic
+      83       3 Mixed Race (Non-Hispanic)
+    4665       4 Non-Black / Non-Hispanic
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Lead In: R05387.00[Default]
+Default Next Question: R05389.00
+--------------------------------------------------------------------------------
+S09200.00    [YSAQ-282J]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             R IS DISORGANIZED OR ORGANIZED
+ 
+How much do you feel that disorganized describes you as a person? Where 1 means 
+organized and 5 means disorganized.
+ 
+NOTE: THE SLIDER BAR MUST BE MOVED TO ACTIVATE THE QUESTION EVEN IF YOU WISH TO 
+SELECT "3".
+ 
+UNIVERSE: R <= 14 at end of 1996
+ 
+       0           0
+     941           1
+    1848           2
+    1358           3
+     612           4
+     113           5
+  -------
+    4872
+ 
+Refusal(-1)           15
+Don't Know(-2)         4
+TOTAL =========>    4891   VALID SKIP(-4)    3005     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:              5        Mean:                2.41
+ 
+Hard Minimum: [1]  Hard Maximum: [5]
+Soft Minimum: [1]  Soft Maximum: [1]
+ 
+Lead In: S09199.00[1:1]
+Default Next Question: S09201.00
+--------------------------------------------------------------------------------
+S09201.00    [YSAQ-282K]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             R IS CONSCIENTIOUS OR NOT CONSCIENTIOUS
+ 
+How much do you feel that conscientious describes you as a person? Where 1 means
+not conscientious and 5 means conscientious.
+ 
+NOTE: THE SLIDER BAR MUST BE MOVED TO ACTIVATE THE QUESTION EVEN IF YOU WISH TO 
+SELECT "3".
+ 
+UNIVERSE: R <= 14 at end of 1996
+ 
+       0           0
+     206           1
+     873           2
+    1372           3
+    1557           4
+     849           5
+  -------
+    4857
+ 
+Refusal(-1)           16
+Don't Know(-2)        18
+TOTAL =========>    4891   VALID SKIP(-4)    3005     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:              5        Mean:                3.41
+ 
+Hard Minimum: [1]  Hard Maximum: [5]
+Soft Minimum: [1]  Soft Maximum: [1]
+ 
+Lead In: S09200.00[Default]
+Default Next Question: S09202.00
+--------------------------------------------------------------------------------
+S09202.00    [YSAQ-282L]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             R IS UNDEPENDABLE OR DEPENDABLE
+ 
+How much do you feel that undependable describes you as a person? Where 1 means 
+dependable and 5 means undependable.
+ 
+NOTE: THE SLIDER BAR MUST BE MOVED TO ACTIVATE THE QUESTION EVEN IF YOU WISH TO 
+SELECT "3".
+ 
+UNIVERSE: R <= 14 at end of 1996
+ 
+       0           0
+    2446           1
+    1596           2
+     440           3
+     298           4
+      94           5
+  -------
+    4874
+ 
+Refusal(-1)           14
+Don't Know(-2)         3
+TOTAL =========>    4891   VALID SKIP(-4)    3005     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:              5        Mean:                1.77
+ 
+Hard Minimum: [1]  Hard Maximum: [5]
+Soft Minimum: [1]  Soft Maximum: [1]
+ 
+Lead In: S09201.00[Default]
+Default Next Question: S09203.00
+--------------------------------------------------------------------------------
+S09203.00    [YSAQ-282M]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             R IS THOROUGH OR CARELESS
+ 
+How much do you feel that thorough describes you as a person? Where 1 means 
+careless and 5 means thorough.
+ 
+NOTE: THE SLIDER BAR MUST BE MOVED TO ACTIVATE THE QUESTION EVEN IF YOU WISH TO 
+SELECT "3".
+ 
+UNIVERSE: R <= 14 at end of 1996
+ 
+       0           0
+     176           1
+     500           2
+     809           3
+    2113           4
+    1276           5
+  -------
+    4874
+ 
+Refusal(-1)           13
+Don't Know(-2)         4
+TOTAL =========>    4891   VALID SKIP(-4)    3005     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:              5        Mean:                3.78
+ 
+Hard Minimum: [1]  Hard Maximum: [5]
+Soft Minimum: [1]  Soft Maximum: [1]
+ 
+Lead In: S09202.00[Default]
+Default Next Question: S09204.00
+--------------------------------------------------------------------------------
+S09204.00    [YSAQ-282N]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             R IS AGREEABLE OR QUARRELSOME
+ 
+How much do you feel that agreeable describes you as a person? Where 1 means 
+quarrelsome and 5 means agreeable.
+ 
+NOTE: THE SLIDER BAR MUST BE MOVED TO ACTIVATE THE QUESTION EVEN IF YOU WISH TO 
+SELECT "3".
+ 
+UNIVERSE: R <= 14 at end of 1996
+ 
+       0           0
+     119           1
+     466           2
+    1058           3
+    2039           4
+    1192           5
+  -------
+    4874
+ 
+Refusal(-1)           14
+Don't Know(-2)         3
+TOTAL =========>    4891   VALID SKIP(-4)    3005     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:              5        Mean:                3.76
+ 
+Hard Minimum: [1]  Hard Maximum: [5]
+Soft Minimum: [1]  Soft Maximum: [1]
+ 
+Lead In: S09203.00[Default]
+Default Next Question: S09205.00
+--------------------------------------------------------------------------------
+S09205.00    [YSAQ-2820]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             R IS DIFFICULT OR COOPERATIVE
+ 
+How much do you feel that difficult describes you as a person? Where 1 means 
+cooperative and 5 means difficult.
+ 
+NOTE: THE SLIDER BAR MUST BE MOVED TO ACTIVATE THE QUESTION EVEN IF YOU WISH TO 
+SELECT "3".
+ 
+UNIVERSE: R <= 14 at end of 1996
+ 
+       0           0
+    1438           1
+    1856           2
+     897           3
+     523           4
+     160           5
+  -------
+    4874
+ 
+Refusal(-1)           13
+Don't Know(-2)         4
+TOTAL =========>    4891   VALID SKIP(-4)    3005     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:              5        Mean:                 2.2
+ 
+Hard Minimum: [1]  Hard Maximum: [5]
+Soft Minimum: [1]  Soft Maximum: [1]
+ 
+Lead In: S09204.00[Default]
+Default Next Question: S09206.00
+--------------------------------------------------------------------------------
+S09206.00    [YSAQ-282P]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             R IS STUBBORN OR FLEXIBLE
+ 
+How much do you feel that stubborn describes you as a person? Where 1 means 
+flexible and 5 means stubborn.
+ 
+NOTE: THE SLIDER BAR MUST BE MOVED TO ACTIVATE THE QUESTION EVEN IF YOU WISH TO 
+SELECT "3".
+ 
+UNIVERSE: R <= 14 at end of 1996
+ 
+       0           0
+     884           1
+    1491           2
+    1181           3
+     904           4
+     415           5
+  -------
+    4875
+ 
+Refusal(-1)           14
+Don't Know(-2)         2
+TOTAL =========>    4891   VALID SKIP(-4)    3005     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:              5        Mean:                2.69
+ 
+Hard Minimum: [1]  Hard Maximum: [5]
+Soft Minimum: [1]  Soft Maximum: [1]
+ 
+Lead In: S09205.00[Default]
+Default Next Question: S09207.00
+--------------------------------------------------------------------------------
+S09207.00    [YSAQ-282Q]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             R IS TRUSTFUL OR DISTRUSTFUL
+ 
+How much do you feel that trustful describes you as a person? Where 1 means 
+distrustful and 5 means trustful.
+ 
+NOTE: THE SLIDER BAR MUST BE MOVED TO ACTIVATE THE QUESTION EVEN IF YOU WISH TO 
+SELECT "3".
+ 
+UNIVERSE: R <= 14 at end of 1996
+ 
+       0           0
+     128           1
+     189           2
+     271           3
+    1344           4
+    2943           5
+  -------
+    4875
+ 
+Refusal(-1)           13
+Don't Know(-2)         3
+TOTAL =========>    4891   VALID SKIP(-4)    3005     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:              5        Mean:                4.39
+ 
+Hard Minimum: [1]  Hard Maximum: [5]
+Soft Minimum: [1]  Soft Maximum: [1]
+ 
+Lead In: S09206.00[Default]
+Default Next Question: S09208.00
+--------------------------------------------------------------------------------
+S86469.00    [YTEL-11A]                                     Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             GOVERNMENT RESPONSIBILITY - PROVIDE JOBS FOR EVERYONE
+ 
+- provide a job for everyone who wants one?
+ 
+UNIVERSE: R is in sample group 2
+These next questions are about how you would like society to work.
+ 
+On the whole, do you think it should or should not be the government's 
+responsibility to...
+ 
+     454       1 Definitely should be
+     617       2 Probably should be
+     462       3 Probably should not be
+     300       4 Definitely should not be
+  -------
+    1833
+ 
+Refusal(-1)            5
+Don't Know(-2)        56
+TOTAL =========>    1894   VALID SKIP(-4)    5665     NON-INTERVIEW(-5)    1425
+ 
+Lead In: S86459.00[2:2]
+Default Next Question: S86470.00
+--------------------------------------------------------------------------------
+S86470.00    [YTEL-11B]                                     Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             GOVERNMENT RESPONSIBILITY - KEEP PRICES UNDER CONTROL
+ 
+- keep prices under control?
+ 
+UNIVERSE: R is in sample group 2
+These next questions are about how you would like society to work.
+ 
+On the whole, do you think it should or should not be the government's 
+responsibility to...
+ 
+    1007       1 Definitely should be
+     621       2 Probably should be
+     161       3 Probably should not be
+      70       4 Definitely should not be
+  -------
+    1859
+ 
+Refusal(-1)            9
+Don't Know(-2)        26
+TOTAL =========>    1894   VALID SKIP(-4)    5665     NON-INTERVIEW(-5)    1425
+ 
+Lead In: S86469.00[Default]
+Default Next Question: S86471.00
+--------------------------------------------------------------------------------
+S86471.00    [YTEL-11C]                                     Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             GOVERNMENT RESPONSIBILITY - PROVIDE HEALTH CARE FOR SICK
+ 
+- provide health care for the sick?
+ 
+UNIVERSE: R is in sample group 2
+These next questions are about how you would like society to work.
+ 
+On the whole, do you think it should or should not be the government's 
+responsibility to...
+ 
+    1247       1 Definitely should be
+     508       2 Probably should be
+      85       3 Probably should not be
+      34       4 Definitely should not be
+  -------
+    1874
+ 
+Refusal(-1)            5
+Don't Know(-2)        15
+TOTAL =========>    1894   VALID SKIP(-4)    5665     NON-INTERVIEW(-5)    1425
+ 
+Lead In: S86470.00[Default]
+Default Next Question: S86472.00
+--------------------------------------------------------------------------------
+S86472.00    [YTEL-11D]                                     Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             GOVERNMENT RESPONSIBLITY - PROVIDE STANDARD OF LIVING FOR OLD
+ 
+- provide a decent standard of living for the old?
+ 
+UNIVERSE: R is in sample group 2
+These next questions are about how you would like society to work.
+ 
+On the whole, do you think it should or should not be the government's 
+responsibility to...
+ 
+    1311       1 Definitely should be
+     464       2 Probably should be
+      71       3 Probably should not be
+      26       4 Definitely should not be
+  -------
+    1872
+ 
+Refusal(-1)            6
+Don't Know(-2)        16
+TOTAL =========>    1894   VALID SKIP(-4)    5665     NON-INTERVIEW(-5)    1425
+ 
+Lead In: S86471.00[Default]
+Default Next Question: S86473.00
+--------------------------------------------------------------------------------
+S86473.00    [YTEL-11E]                                     Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             GOVERNMENT RESPONSIBLITY - PROVIDE INDUSTRY WITH HELP
+ 
+- provide industry with the help it needs to grow?
+ 
+UNIVERSE: R is in sample group 2
+These next questions are about how you would like society to work.
+ 
+On the whole, do you think it should or should not be the government's 
+responsibility to...
+ 
+     778       1 Definitely should be
+     746       2 Probably should be
+     216       3 Probably should not be
+      75       4 Definitely should not be
+  -------
+    1815
+ 
+Refusal(-1)            6
+Don't Know(-2)        73
+TOTAL =========>    1894   VALID SKIP(-4)    5665     NON-INTERVIEW(-5)    1425
+ 
+Lead In: S86472.00[Default]
+Default Next Question: S86474.00
+--------------------------------------------------------------------------------
+S86474.00    [YTEL-11F]                                     Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             GOVERNMENT RESPONSIBLITY - PROVIDE LIVING STANDARD FOR UNEMPLOYED
+ 
+- provide a decent standard of living for the unemployed?
+ 
+UNIVERSE: R is in sample group 2
+These next questions are about how you would like society to work.
+ 
+On the whole, do you think it should or should not be the government's 
+responsibility to...
+ 
+     395       1 Definitely should be
+     730       2 Probably should be
+     476       3 Probably should not be
+     210       4 Definitely should not be
+  -------
+    1811
+ 
+Refusal(-1)            7
+Don't Know(-2)        76
+TOTAL =========>    1894   VALID SKIP(-4)    5665     NON-INTERVIEW(-5)    1425
+ 
+Lead In: S86473.00[Default]
+Default Next Question: S86475.00
+--------------------------------------------------------------------------------
+S86475.00    [YTEL-11G]                                     Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             GOVERNMENT RESPONSIBLITY - REDUCE INCOME DIFFERENCES
+ 
+- reduce income differences between the rich and poor?
+ 
+UNIVERSE: R is in sample group 2
+These next questions are about how you would like society to work.
+ 
+On the whole, do you think it should or should not be the government's 
+responsibility to...
+ 
+     576       1 Definitely should be
+     505       2 Probably should be
+     406       3 Probably should not be
+     288       4 Definitely should not be
+  -------
+    1775
+ 
+Refusal(-1)            7
+Don't Know(-2)       112
+TOTAL =========>    1894   VALID SKIP(-4)    5665     NON-INTERVIEW(-5)    1425
+ 
+Lead In: S86474.00[Default]
+Default Next Question: S86476.00
+--------------------------------------------------------------------------------
+S86476.00    [YTEL-11H]                                     Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             GOVERNMENT RESPONSIBLITY - PROVIDE COLLEGE FINAN AID
+ 
+- give financial assistance to college students from low-income families?
+ 
+UNIVERSE: R is in sample group 2
+These next questions are about how you would like society to work.
+ 
+On the whole, do you think it should or should not be the government's 
+responsibility to...
+ 
+    1377       1 Definitely should be
+     432       2 Probably should be
+      50       3 Probably should not be
+      16       4 Definitely should not be
+  -------
+    1875
+ 
+Refusal(-1)            6
+Don't Know(-2)        13
+TOTAL =========>    1894   VALID SKIP(-4)    5665     NON-INTERVIEW(-5)    1425
+ 
+Lead In: S86475.00[Default]
+Default Next Question: S86477.00
+--------------------------------------------------------------------------------
+S86477.00    [YTEL-11I]                                     Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             GOVERNMENT RESPONSIBLITY - PROVIDE DECENT HOUSING
+ 
+- provide decent housing for those who can't afford it?
+ 
+UNIVERSE: R is in sample group 2
+These next questions are about how you would like society to work.
+ 
+On the whole, do you think it should or should not be the government's 
+responsibility to...
+ 
+     817       1 Definitely should be
+     801       2 Probably should be
+     185       3 Probably should not be
+      44       4 Definitely should not be
+  -------
+    1847
+ 
+Refusal(-1)            9
+Don't Know(-2)        38
+TOTAL =========>    1894   VALID SKIP(-4)    5665     NON-INTERVIEW(-5)    1425
+ 
+Lead In: S86476.00[Default]
+Default Next Question: S86478.00
+--------------------------------------------------------------------------------
+S86478.00    [YTEL-11J]                                     Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             GOVERNMENT RESPONSIBLITY - PROTECT ENVIRONMENT
+ 
+- impose strict laws to make industry do less damage to the environment?
+ 
+UNIVERSE: R is in sample group 2
+These next questions are about how you would like society to work.
+ 
+On the whole, do you think it should or should not be the government's 
+responsibility to...
+ 
+    1244       1 Definitely should be
+     533       2 Probably should be
+      55       3 Probably should not be
+      28       4 Definitely should not be
+  -------
+    1860
+ 
+Refusal(-1)            6
+Don't Know(-2)        28
+TOTAL =========>    1894   VALID SKIP(-4)    5665     NON-INTERVIEW(-5)    1425
+ 
+Lead In: S86477.00[Default]
+Default Next Question: S86482.00
+--------------------------------------------------------------------------------
+T10686.00    [YTEL-41]                                      Survey Year: 2007
+  PRIMARY VARIABLE
+
+ 
+             IMPORTANCE OF NLSY97 IN UNDERSTANDING YOUNG AMERICANS LIVES
+ 
+Overall, how important do you believe the NLSY97 data are to understanding the 
+lives of Americans in their twenties?
+ 
+UNIVERSE: R is in sample group 2 or 3
+ 
+    2219       1 Very important
+    1369       2 Somewhat important
+      56       3 Not very important
+      16       4 Not important at all
+  -------
+    3660
+ 
+Refusal(-1)            1
+Don't Know(-2)        78
+TOTAL =========>    3739   VALID SKIP(-4)    3679     NON-INTERVIEW(-5)    1566
+ 
+Lead In: T10682.00[2:3]
+Default Next Question: T10687.00
+--------------------------------------------------------------------------------
+T10687.00    [YTEL-42]                                      Survey Year: 2007
+  PRIMARY VARIABLE
+
+ 
+             PERCEIVED IMPORTANCE OF NLSY97 DATA TO OTHER PEOPLE
+ 
+Now think about how most people would answer this question -
+ 
+How important are the NLSY97 data to understanding the lives of Americans in 
+their twenties? -
+ 
+Would most people say very important, somewhat important, not very important, or
+not at all important?
+ 
+UNIVERSE: R is in sample group 2 or 3
+ 
+     735       1 Very important
+    2090       2 Somewhat important
+     603       3 Not very important
+     162       4 Not important at all
+  -------
+    3590
+ 
+Refusal(-1)            2
+Don't Know(-2)       147
+TOTAL =========>    3739   VALID SKIP(-4)    3679     NON-INTERVIEW(-5)    1566
+ 
+Lead In: T10686.00[Default]
+Default Next Question: T10688.00
+--------------------------------------------------------------------------------
+T10688.00    [YTEL-43]                                      Survey Year: 2007
+  PRIMARY VARIABLE
+
+ 
+             HOW WELL DOES NLSY97 CAPTURE INFORMATION ABOUT RESPONDENTS LIFE?
+ 
+Overall, how well do you feel that this NLSY97 interview captured information 
+about your life?
+ 
+UNIVERSE: R is in sample group 2 or 3
+ 
+    2525       1 Very well
+    1159       2 Somewhat well
+      38       3 Somewhat poorly
+       6       4 Very poorly
+  -------
+    3728
+ 
+Refusal(-1)            1
+Don't Know(-2)        10
+TOTAL =========>    3739   VALID SKIP(-4)    3679     NON-INTERVIEW(-5)    1566
+ 
+Lead In: T10687.00[Default]
+Default Next Question: T10693.00
+--------------------------------------------------------------------------------
+T10691.00    [YTEL-52~000001]                               Survey Year: 2007
+  PRIMARY VARIABLE
+
+ 
+             PERSONAL RESPONSIBILITY QUESTIONS - PEOPLE NEED TO LOOK AFTER 
+             THEMSELVES
+ 
+Please tell me whether you strongly agree, agree, neither agree nor disagree, 
+disagree, or strongly disagree with the following statements:
+ 
+UNIVERSE: R is in sample group 4
+ 
+RESPONSE CHOICE: "People should be willing to help others who are less 
+                      fortunate."
+ 
+     814       4 Strongly Agree
+     940       3 Agree
+      65       2 Neither Agree nor Disagree
+      17       1 Disagree
+       4       0 Strongly Disagree
+  -------
+    1840
+ 
+Refusal(-1)            1
+Don't Know(-2)         7
+TOTAL =========>    1848   VALID SKIP(-4)    5570     NON-INTERVIEW(-5)    1566
+ 
+Min:              0        Max:              4        Mean:                3.38
+ 
+Lead In: T10690.00[Default]
+Default Next Question: T10692.00
+--------------------------------------------------------------------------------
+T10691.01    [YTEL-52~000002]                               Survey Year: 2007
+  PRIMARY VARIABLE
+
+ 
+             PERSONAL RESPONSIBILITY QUESTIONS - PEOPLE SHOULD TAKE CARE OF 
+             THEMSELVES
+ 
+Please tell me whether you strongly agree, agree, neither agree nor disagree, 
+disagree, or strongly disagree with the following statements:
+ 
+UNIVERSE: R is in sample group 4
+ 
+RESPONSE CHOICE: "Those in need have to learn to take care of themselves and not
+                      depend on others."
+ 
+     281       4 Strongly Agree
+     860       3 Agree
+     308       2 Neither Agree nor Disagree
+     323       1 Disagree
+      57       0 Strongly Disagree
+  -------
+    1829
+ 
+Refusal(-1)            3
+Don't Know(-2)        16
+TOTAL =========>    1848   VALID SKIP(-4)    5570     NON-INTERVIEW(-5)    1566
+ 
+Min:              0        Max:              4        Mean:                2.54
+ 
+Lead In: T10690.00[Default]
+Default Next Question: T10692.00
+--------------------------------------------------------------------------------
+T10691.02    [YTEL-52~000003]                               Survey Year: 2007
+  PRIMARY VARIABLE
+
+ 
+             PERSONAL RESPONSIBILITY QUESTIONS - HELPING PEOPLE IS IMPORTANT TO 
+             R
+ 
+Please tell me whether you strongly agree, agree, neither agree nor disagree, 
+disagree, or strongly disagree with the following statements:
+ 
+UNIVERSE: R is in sample group 4
+ 
+RESPONSE CHOICE: "Personally assisting people in trouble is very important to 
+                      me."
+ 
+     414       4 Strongly Agree
+    1045       3 Agree
+     256       2 Neither Agree nor Disagree
+     103       1 Disagree
+      18       0 Strongly Disagree
+  -------
+    1836
+ 
+Refusal(-1)            1
+Don't Know(-2)        11
+TOTAL =========>    1848   VALID SKIP(-4)    5570     NON-INTERVIEW(-5)    1566
+ 
+Min:              0        Max:              4        Mean:                2.94
+ 
+Lead In: T10690.00[Default]
+Default Next Question: T10692.00
+--------------------------------------------------------------------------------
+T10691.03    [YTEL-52~000004]                               Survey Year: 2007
+  PRIMARY VARIABLE
+
+ 
+             PERSONAL RESPONSIBILITY QUESTIONS - PEOPLE SHOULD HELP LESS 
+             FORTUNATE
+ 
+Please tell me whether you strongly agree, agree, neither agree nor disagree, 
+disagree, or strongly disagree with the following statements:
+ 
+UNIVERSE: R is in sample group 4
+ 
+RESPONSE CHOICE: "These days people need to look after themselves and not overly
+                      worry about others."
+ 
+     145       4 Strongly Agree
+     619       3 Agree
+     290       2 Neither Agree nor Disagree
+     593       1 Disagree
+     174       0 Strongly Disagree
+  -------
+    1821
+ 
+Refusal(-1)            6
+Don't Know(-2)        21
+TOTAL =========>    1848   VALID SKIP(-4)    5570     NON-INTERVIEW(-5)    1566
+ 
+Min:              0        Max:              4        Mean:                1.98
+ 
+Lead In: T10690.00[Default]
+Default Next Question: T10692.00
