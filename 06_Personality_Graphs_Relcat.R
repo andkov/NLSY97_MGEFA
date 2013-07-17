@@ -33,7 +33,7 @@ p<-ggplot(dsL_PersonGoer,aes(x=factor(slider12345),group=trait))+
   geom_bar(aes(y = ..density..,group=trait)) + 
   facet_grid(trait~.)+
   scale_y_continuous(limits=c(0,.8))+
-  ggtitle("Males")
+  ggtitle("Goers")
 pathFileOut<-file.path(pathImageOut,paste0("Traits","_","Goer",".png"))
 png(filename = pathFileOut,
     width =5, height =9 , units = "in",res=90)
@@ -46,7 +46,7 @@ p<-ggplot(dsL_PersonIrreg,aes(x=factor(slider12345),group=trait))+
   geom_bar(aes(y = ..density..,group=trait)) + 
   facet_grid(trait~.)+
   scale_y_continuous(limits=c(0,.8))+
-  ggtitle("Males")
+  ggtitle("Irregulars")
 pathFileOut<-file.path(pathImageOut,paste0("Traits","_","Irregular",".png"))
 png(filename = pathFileOut,
     width =5, height =9 , units = "in",res=90)
@@ -60,7 +60,7 @@ p<-ggplot(dsL_PersonNongoer,aes(x=factor(slider12345),group=trait))+
   geom_bar(aes(y = ..density..,group=trait)) + 
   facet_grid(trait~.)+
   scale_y_continuous(limits=c(0,.8))+
-  ggtitle("Males")
+  ggtitle("Nongoers")
 pathFileOut<-file.path(pathImageOut,paste0("Traits","_","Nongoer",".png"))
 png(filename = pathFileOut,
     width =5, height =9 , units = "in",res=90)
