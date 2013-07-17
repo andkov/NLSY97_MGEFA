@@ -5,7 +5,7 @@
 # install.packages("plotrix")
 # install.packages("lme4")
 
-rm(list=ls(all=TRUE)) #Clear out variables from previous runs.
+# rm(list=ls(all=TRUE)) #Clear out variables from previous runs.
 options("scipen"=10, "digits"=5) # adjust how scientific notation is displayed
 
 require(ggplot2)
