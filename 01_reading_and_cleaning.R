@@ -42,14 +42,16 @@ dsSource<-rename(dsSource, c(
   "R0536402"="byear",
   "R1235800"="sample",
   "R1482600"="race",
-  "S0920000"="organized", 
-  "S0920100"="conscientious",
-  "S0920200"="dependable",
+    
+  "S0920700"="trustful",
   "S0920300"="thorough",
   "S0920400"="agreeable",
-  "S0920500"="cooperative",
+  "S0920100"="conscientious",
   "S0920600"="flexible",
-  "S0920700"="trustful",
+  "S0920000"="organized", 
+  "S0920500"="cooperative",
+  "S0920200"="dependable",
+    
   "S8646900"="providejobs",
   "S8647000"="controlprices",
   "S8647100"="healthcare",
@@ -77,8 +79,14 @@ dsSource <- dsSource[dsSource$byear %in% years, ]
 dsSource <- dsSource[dsSource$id != "V", ]
 dsSource$id <- as.integer(dsSource$id)
 
-personalityvars<-c("organized", "conscientious","dependable","thorough",
-                  "agreeable","cooperative","flexible","trustful")
+personalityvars<-c("dependable",
+                   "trustful",
+                   "thorough",
+                   "agreeable",
+                   "conscientious",
+                   "flexible",
+                   "organized", 
+                   "cooperative")
 personalityvalues<-c(1,2,3,4,5)
 
 # keep only observations that has valid values on PERSONALITY scale
@@ -107,7 +115,7 @@ dsGovresp <- dsGovresp[dsGovresp$cooperative %in% responsibilityvalues, ]
 dsGovresp <- dsGovresp[dsGovresp$flexible %in% responsibilityvalues, ]
 dsGovresp <- dsGovresp[dsGovresp$trustful %in% responsibilityvalues, ]
 
-table(dsPersonality$sex)
+table(dsPersonality$trustful)
 
 
 
