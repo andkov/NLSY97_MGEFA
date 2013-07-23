@@ -5,7 +5,7 @@
 # install.packages("plotrix")
 # install.packages("lme4")
 
-# rm(list=ls(all=TRUE)) #Clear out variables from previous runs.
+rm(list=ls(all=TRUE)) #Clear out variables from previous runs.
 options("scipen"=10, "digits"=5) # adjust how scientific notation is displayed
 
 require(ggplot2)
@@ -52,16 +52,17 @@ dsSource<-rename(dsSource, c(
   "S0920500"="cooperative",
   "S0920200"="dependable",
     
-  "S8646900"="providejobs",
-  "S8647000"="controlprices",
+  "S8646900"="jobs",
+  "S8647000"="prices",
   "S8647100"="healthcare",
-  "S8647200"="livingstandard",
-  "S8647300"="helpneedy",
-  "S8647400"="helpunempl",
-  "S8647500"="helpindustry",
-  "S8647600"="fundcollege",
+  "S8647200"="elderly",
+  "S8647300"="industry",
+  "S8647400"="unemployed",
+  "S8647500"="inequality",
+  "S8647600"="college",
   "S8647700"="housing",
   "S8647800"="environment",
+  
   "T1068600"="T1068600",
   "T1068700"="T1068700",
   "T1068800"="T1068800",
@@ -100,24 +101,35 @@ dsPersonality <- dsPersonality[dsPersonality$cooperative %in% personalityvalues,
 dsPersonality <- dsPersonality[dsPersonality$flexible %in% personalityvalues, ]
 dsPersonality <- dsPersonality[dsPersonality$trustful %in% personalityvalues, ]
 
-responsibilityvars<-c("providejobs","controlprices","healthcare","livingstandard","helpneedy",
-                      "helpunempl","helpindustry","fundcollege","housing","environment")
+responsibilityvars<-c("jobs",
+                      "prices",
+                      "healthcare",
+                      "elderly",
+                      "industry",
+                      "unemployed",
+                      "inequality",
+                      "college",
+                      "housing",
+                      "environment")
 responsibilityvalues<-c(1,2,3,4)
 
 # keep only observations that has valid values on RESPONSIBILITY scale
 dsGovresp<-dsSource
-dsGovresp <- dsGovresp[dsGovresp$organized %in% responsibilityvalues, ]
-dsGovresp <- dsGovresp[dsGovresp$conscientious %in% responsibilityvalues, ]
-dsGovresp <- dsGovresp[dsGovresp$dependable %in% responsibilityvalues, ]
-dsGovresp <- dsGovresp[dsGovresp$thorough %in% responsibilityvalues, ]
-dsGovresp <- dsGovresp[dsGovresp$agreeable %in% responsibilityvalues, ]
-dsGovresp <- dsGovresp[dsGovresp$cooperative %in% responsibilityvalues, ]
-dsGovresp <- dsGovresp[dsGovresp$flexible %in% responsibilityvalues, ]
-dsGovresp <- dsGovresp[dsGovresp$trustful %in% responsibilityvalues, ]
+dsGovresp <- dsGovresp[dsGovresp$jobs %in% responsibilityvalues, ]
+dsGovresp <- dsGovresp[dsGovresp$prices %in% responsibilityvalues, ]
+dsGovresp <- dsGovresp[dsGovresp$healthcare %in% responsibilityvalues, ]
+dsGovresp <- dsGovresp[dsGovresp$elderly %in% responsibilityvalues, ]
+dsGovresp <- dsGovresp[dsGovresp$industry %in% responsibilityvalues, ]
+dsGovresp <- dsGovresp[dsGovresp$unemployed %in% responsibilityvalues, ]
+dsGovresp <- dsGovresp[dsGovresp$inequality %in% responsibilityvalues, ]
+dsGovresp <- dsGovresp[dsGovresp$college %in% responsibilityvalues, ]
+dsGovresp <- dsGovresp[dsGovresp$housing %in% responsibilityvalues, ]
+dsGovresp <- dsGovresp[dsGovresp$environment %in% responsibilityvalues, ]
+
 
 table(dsPersonality$trustful)
 
-
+table(dsSource$fundcollege)
 
                       
 # remove all but one dataset
